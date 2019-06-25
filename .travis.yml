@@ -1,3 +1,4 @@
 language: python
 script:
-- pipenv --help
+- pip install pytest
+- pytest
