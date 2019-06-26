@@ -27,9 +27,17 @@ def test_zero(my_calc):
     assert my_calc.relief_calc(arr_relief) == 0
 
 def test_multiple_columns(my_calc):
-    arr_relief = [5, 3, 2, 8, 4, 3, 9]
-    assert my_calc.relief_calc(arr_relief) == 14
+    arr_relief = [5, 3, 2, 8, 4, 3, 6]
+    assert my_calc.relief_calc(arr_relief) == 10
+
+def test_multiple_columns_2(my_calc):
+    arr_relief = [5, 3, 2, 8, 4, 3, 6, 1, 7]
+    assert my_calc.relief_calc(arr_relief) == 19
+
+def test_coroutine(my_calc):
+    arr_relief = [5, 3, 2, 8, 1, 8, 9, 3, 2, 4]
+    assert my_calc.relief_calc(arr_relief) == 15
 
 def test_given_solution(my_calc):
     arr_relief =  [3, 0, 1, 3, 0, 5]
-    assert my_calc.relief_calc(arr_relief) == 3
+    assert my_calc.relief_calc(arr_relief) == 8
