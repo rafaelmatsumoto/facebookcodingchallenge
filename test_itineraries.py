@@ -1,4 +1,4 @@
-from main4 import AirportSequence
+from itineraries import AirportSequence
 
 def test_challenge():
     air_seq = AirportSequence([('SFO', 'HKO'), ('YYZ', 'SFO'), ('YUL', 'YYZ'), ('HKO', 'ORD')], 'YUL')
