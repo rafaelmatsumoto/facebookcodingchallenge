@@ -10,6 +10,10 @@ def test_simple(my_calc):
     arr_relief = [2, 1, 2]
     assert my_calc.relief_calc(arr_relief) == 1
 
+def test_zero_relief(my_calc):
+    arr_relief = [3, 3, 3, 3]
+    assert my_calc.relief_calc(arr_relief) == 0
+
 def test_equality(my_calc):
     arr_relief = [3, 1, 3, 1, 3, 1, 3]
     assert my_calc.relief_calc(arr_relief) == 6
